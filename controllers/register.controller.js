@@ -9,6 +9,11 @@ export const registerUser = async (req,res) => {
       res.status(400).json({message:"All fields are required"})
     }
 
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return res.status(400).json({ message: "User already exists. Please log in instead." });
+    }
+
     const newUser = await User.register({email,password})
     return res.status(201).json({message:"User Created Successfully",newUser})
 
