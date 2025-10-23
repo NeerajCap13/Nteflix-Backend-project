@@ -1,7 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
-import { ConnectDB } from '../DB/ConnectDB.js'
-import routing from '../Routes/user.route.js'
+import { ConnectDB } from './DB/ConnectDB.js'
+import routing from './Routes/user.route.js'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 

@@ -2,11 +2,11 @@
   "name": "nteflix-backend",
   "version": "1.0.0",
   "description": "Backend to store the Netflix User data",
-  "main": "api/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon api/index.js"
+    "start": "nodemon index.js"
   },
   "author": "Neeraj Moria",
   "license": "ISC",
