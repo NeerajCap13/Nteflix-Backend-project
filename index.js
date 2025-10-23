@@ -20,7 +20,7 @@ ConnectDB()
 })
 
 app.use(cors({
-  origin: ["https://nteflix-project.vercel.app", "http://localhost:5174"],
+  origin: ["http://localhost:5173","https://nteflix-project.vercel.app"],
   credentials: true
 }))
 app.use(express.json())
